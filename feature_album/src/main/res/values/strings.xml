@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Leboncoin</string>
+    <string name="album_id">Album %d</string>
+    <string name="paging_error">ERROR. Tap to retry.</string>
+</resources>

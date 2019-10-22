@@ -1,0 +1,2 @@
+include ':app', ':feature_album'
+rootProject.name='CleanProject'
