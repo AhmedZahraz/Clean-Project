@@ -19,7 +19,7 @@ class ItemDetailFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            itemDomainModel = it.getParcelable<ItemDomainModel>(ARG_PARAM1)
+            itemDomainModel = it.getParcelable(ARG_PARAM1)
         }
     }
 
@@ -36,7 +36,7 @@ class ItemDetailFragment : Fragment() {
 
         itemDomainModel?.apply {
             Picasso.get().load(imageURL)
-                .into(imageView);
+                .into(imageView)
             titleTextView.text = title
         }
     }

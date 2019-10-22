@@ -2,7 +2,6 @@ package fr.azmobile.feature.album.presentation.dagger
 
 import dagger.Component
 import fr.azmobile.feature.album.domain.dagger.DomainModule
-import fr.azmobile.demo.presentation.dagger.PresentationModule
 import fr.azmobile.feature.album.data.cache.dagger.DataCacheModule
 import fr.azmobile.feature.album.data.remote.dagger.DataRemoteModule
 import fr.azmobile.feature.album.presentation.ui.albumlist.AlbumListFragment

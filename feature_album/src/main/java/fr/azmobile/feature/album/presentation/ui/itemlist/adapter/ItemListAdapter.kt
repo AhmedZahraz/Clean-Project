@@ -56,7 +56,7 @@ class ItemListAdapter(retry: () -> Unit) :
             Picasso.get().load(model?.thumbnailURL)
                 .error(R.drawable.placeholder_leboncoin)
                 .placeholder(R.drawable.placeholder_leboncoin)
-                .into(itemView.imageView);
+                .into(itemView.imageView)
             itemView.titleTextView.text = model?.title
         }
 

@@ -2,7 +2,6 @@ package fr.azmobile.feature.album.presentation.base.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.paging.PagedList
-import fr.azmobile.feature.album.domain.model.ItemDomainModel
 import fr.azmobile.feature.album.presentation.base.model.State
 
 /**

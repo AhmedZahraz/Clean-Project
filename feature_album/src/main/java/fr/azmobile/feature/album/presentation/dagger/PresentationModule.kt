@@ -1,4 +1,4 @@
-package fr.azmobile.demo.presentation.dagger
+package fr.azmobile.feature.album.presentation.dagger
 
 import dagger.Module
 import dagger.Provides

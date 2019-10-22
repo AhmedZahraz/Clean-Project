@@ -27,12 +27,10 @@ internal class AlbumRepositoryImpl(
 
         return Single.create { singleEmitter ->
             albumCacheRepository.getAlbumListSize().subscribe { size, error ->
-                if (error != null) {
-                    singleEmitter.onError(error)
-                } else if (size > 0) {
-                    getAlbumListFromCache(singleEmitter)
-                } else {
-                    albumRemoteRepository.getAlbumItemList().subscribe { _, remoteError ->
+                when {
+                    error != null -> singleEmitter.onError(error)
+                    size > 0 -> getAlbumListFromCache(singleEmitter)
+                    else -> albumRemoteRepository.getAlbumItemList().subscribe { _, remoteError ->
                         if (remoteError != null) {
                             singleEmitter.onError(remoteError)
                         } else {
